@@ -119,4 +119,3 @@ class TestTaskService(unittest.TestCase):
         """Test that add_task raises ValueError if title is empty."""
         with self.assertRaisesRegex(ValueError, "Title cannot be empty."):
             self.task_service.add_task("", "Description")
-
